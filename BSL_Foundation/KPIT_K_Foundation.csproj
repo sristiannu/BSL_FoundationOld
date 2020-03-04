@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\Misc\Express\Junnark AspCoreGen 2.0 Razor\AspCoreGen2Razor.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25D06BB6-738F-4C7A-BED6-37D3FFB26655}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>KPIT_K_Foundation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>2.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>KPIT_K_Foundation</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>KPIT_K_Foundation.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>KPIT_K_Foundation.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Application_Components.AuditLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Application_Components.AuditLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Application_Components.Caching, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Application_Components.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Application_Components.EmailNotification">
+      <HintPath>External Dlls\Application_Components.EmailNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="Application_Components.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Application_Components.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Application_Components.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Application_Components.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AutoCodeGenerator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoCodeGenerator.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Library\AssignWorkflowStepsModel.cs" />
+    <Compile Include="Library\AssignWorklowStepsPage.cs" />
+    <Compile Include="Library\GenerateProductSerial.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Library\MySettings.cs" />
+    <Compile Include="Library\NlogConfig.cs" />
+    <Compile Include="Library\RequiredError.cs" />
+    <Compile Include="Library\SymmetricKey.cs" />
+    <Compile Include="Library\BusinessObject.cs" />
+    <Compile Include="Library\BusinessObjectBase.cs" />
+    <Compile Include="Library\BusinessObjectExpress.cs" />
+    <Compile Include="Library\ApiController.cs" />
+    <Compile Include="Library\Controller.cs" />
+    <Compile Include="Library\ControllerlBase.cs" />
+    <Compile Include="Library\DataLayer.cs" />
+    <Compile Include="Library\DataLayerBase.cs" />
+    <Compile Include="Library\DataLayerBaseClassic.cs" />
+    <Compile Include="Library\DynamicSql.cs" />
+    <Compile Include="Library\EfBusinessObject.cs" />
+    <Compile Include="Library\EfDbContext.cs" />
+    <Compile Include="Library\CodeExample.cs" />
+    <Compile Include="Library\AppSetting.cs" />
+    <Compile Include="Library\DbaseFile.cs" />
+    <Compile Include="Library\FunctionsHelper.cs" />
+    <Compile Include="Library\LazyFile.cs" />
+    <Compile Include="Library\Fields.cs" />
+    <Compile Include="Library\FieldsBase.cs" />
+    <Compile Include="Library\Model.cs" />
+    <Compile Include="Library\ModelBase.cs" />
+    <Compile Include="Library\PropertyModel.cs" />
+    <Compile Include="Library\PropertyModelBase.cs" />
+    <Compile Include="Library\AddEditPartialPageModel.cs" />
+    <Compile Include="Library\RazorPage.cs" />
+    <Compile Include="Library\RazorPageModel.cs" />
+    <Compile Include="Library\ForeachViewModel.cs" />
+    <Compile Include="Library\ForeachViewModelBase.cs" />
+    <Compile Include="Library\AddEditPartialPage.cs" />
+    <Compile Include="Library\AddOrUpdatePage.cs" />
+    <Compile Include="Library\DetailsPage.cs" />
+    <Compile Include="Library\MaskPartialView.cs" />
+    <Compile Include="Library\Column.cs" />
+    <Compile Include="Library\Columns.cs" />
+    <Compile Include="Library\Dbase.cs" />
+    <Compile Include="Library\Table.cs" />
+    <Compile Include="Library\Tables.cs" />
+    <Compile Include="Library\AddOrUpdateType.cs" />
+    <Compile Include="Library\AppendAddEditRecordContentType.cs" />
+    <Compile Include="Library\AppendAddEditRecordType.cs" />
+    <Compile Include="Library\ApplicationType.cs" />
+    <Compile Include="Library\ApplicationVersion.cs" />
+    <Compile Include="Library\BusinessObjectBaseType.cs" />
+    <Compile Include="Library\CodeToGenerateType.cs" />
+    <Compile Include="Library\ControllerBaseType.cs" />
+    <Compile Include="Library\CrudOperation.cs" />
+    <Compile Include="Library\DatabaseObjectToGenerateFrom.cs" />
+    <Compile Include="Library\GeneratedSqlType.cs" />
+    <Compile Include="Library\GridViewStyle.cs" />
+    <Compile Include="Library\GridViewType.cs" />
+    <Compile Include="Library\JQueryUITheme.cs" />
+    <Compile Include="Library\Language.cs" />
+    <Compile Include="Library\ModelBaseType.cs" />
+    <Compile Include="Library\MVCGridViewPart.cs" />
+    <Compile Include="Library\MVCGridViewType.cs" />
+    <Compile Include="Library\ProjectFileType.cs" />
+    <Compile Include="Library\RelatedTablePart.cs" />
+    <Compile Include="Library\SelectAllType.cs" />
+    <Compile Include="Library\SQLType.cs" />
+    <Compile Include="Library\StartUpType.cs" />
+    <Compile Include="Library\StoredProcName.cs" />
+    <Compile Include="Library\WebControlType.cs" />
+    <Compile Include="Library\WinControlType.cs" />
+    <Compile Include="Library\Functions.cs" />
+    <Compile Include="Library\IKeywords.cs" />
+    <Compile Include="Library\IsCheckedView.cs" />
+    <Compile Include="Library\IsCheckedWebForm.cs" />
+    <Compile Include="Library\KeywordsCS.cs" />
+    <Compile Include="Library\KeywordsFactory.cs" />
+    <Compile Include="Library\KeywordsVB.cs" />
+    <Compile Include="Library\MyConstants.cs" />
+    <Compile Include="Library\OrganizeWebForm.cs" />
+    <Compile Include="Library\SystemWebUIPage.cs" />
+    <Compile Include="Library\ViewNames.cs" />
+    <Compile Include="Library\StoredProcedure.cs" />
+    <Compile Include="Library\AddRecordScript.cs" />
+    <Compile Include="Library\AppConfigFile.cs" />
+    <Compile Include="Library\AppSettingsClass.cs" />
+    <Compile Include="Library\AppSettingsJson.cs" />
+    <Compile Include="Library\AssemblyInfoFile.cs" />
+    <Compile Include="Library\AuthConfigFile.cs" />
+    <Compile Include="Library\BundleConfig.cs" />
+    <Compile Include="Library\BundleDotConfigFile.cs" />
+    <Compile Include="Library\BusinessAndDataObjectsView.cs" />
+    <Compile Include="Library\CrudOperationFile.cs" />
+    <Compile Include="Library\DefaultHtm.cs" />
+    <Compile Include="Library\ErrorFile.cs" />
+    <Compile Include="Library\FieldTypeFile.cs" />
+    <Compile Include="Library\FilterConfig.cs" />
+    <Compile Include="Library\FunctionsFile.cs" />
+    <Compile Include="Library\GeneratedCodeHtm.cs" />
+    <Compile Include="Library\GlobalAsax.cs" />
+    <Compile Include="Library\GlobalAsaxMvcFile.cs" />
+    <Compile Include="Library\GlobalCss.cs" />
+    <Compile Include="Library\GridViewAddRecordScript.cs" />
+    <Compile Include="Library\HomeIndexPageModel.cs" />
+    <Compile Include="Library\HomeIndexPage.cs" />
+    <Compile Include="Library\HtmlHelpers.cs" />
+    <Compile Include="Library\IdentityModels.cs" />
+    <Compile Include="Library\JqGridDataFile.cs" />
+    <Compile Include="Library\LayoutFile.cs" />
+    <Compile Include="Library\ListCssPartialFile.cs" />
+    <Compile Include="Library\ListScriptsPartialFile.cs" />
+    <Compile Include="Library\MasterPage.cs" />
+    <Compile Include="Library\MvcWebConfig.cs" />
+    <Compile Include="Library\MvcWebConfigInViews.cs" />
+    <Compile Include="Library\PackagesConfig.cs" />
+    <Compile Include="Library\ProgramFile.cs" />
+    <Compile Include="Library\ProjectFile.cs" />
+    <Compile Include="Library\ProjectFragmentJsonLock.cs" />
+    <Compile Include="Library\ProjectJson.cs" />
+    <Compile Include="Library\ProjectJsonLock.cs" />
+    <Compile Include="Library\ProjectUserFile.cs" />
+    <Compile Include="Library\ReferencesJs.cs" />
+    <Compile Include="Library\RegisterClientValidationExtensionsFile.cs" />
+    <Compile Include="Library\RepositoriesConfig.cs" />
+    <Compile Include="Library\ResourcesDesignerFile.cs" />
+    <Compile Include="Library\RouteConfig.cs" />
+    <Compile Include="Library\SettingsDesignerFile.cs" />
+    <Compile Include="Library\SiteCss.cs" />
+    <Compile Include="Library\SiteMobileMaster.cs" />
+    <Compile Include="Library\SkinFile.cs" />
+    <Compile Include="Library\SolutionFile.cs" />
+    <Compile Include="Library\StartUp.cs" />
+    <Compile Include="Library\StartUpAuth.cs" />
+    <Compile Include="Library\ValidationScriptsPartialView.cs" />
+    <Compile Include="Library\ViewImportsFile.cs" />
+    <Compile Include="Library\ViewStartFile.cs" />
+    <Compile Include="Library\ViewSwitcherUserControl.cs" />
+    <Compile Include="Library\WebApiConfig.cs" />
+    <Compile Include="Library\WebConfig.cs" />
+    <Compile Include="Library\WinFormApplicationDesigner.cs" />
+    <Compile Include="Library\WinFormApplicationMyApp.cs" />
+    <Compile Include="Library\WinFormProjectFile.cs" />
+    <Compile Include="Forms\AutoCodeGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\WorkflowHelperClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AutoCodeGenerator.resx">
+      <DependentUpon>AutoCodeGenerator.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AutoCodeGenerator.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="KPIT_K_Foundation.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="External Dlls\Application_Components.AuditLog.dll" />
+    <Content Include="External Dlls\Application_Components.Caching.dll" />
+    <Content Include="External Dlls\Application_Components.EmailNotification.dll" />
+    <Content Include="External Dlls\Application_Components.Logging.dll" />
+    <Content Include="External Dlls\Application_Components.Security.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
